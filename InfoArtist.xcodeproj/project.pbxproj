@@ -10,9 +10,12 @@
 		DD5053442C03AC49003D4703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053432C03AC49003D4703 /* AppDelegate.swift */; };
 		DD5053462C03AC49003D4703 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053452C03AC49003D4703 /* SceneDelegate.swift */; };
 		DD5053482C03AC49003D4703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053472C03AC49003D4703 /* ViewController.swift */; };
-		DD50534B2C03AC49003D4703 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD50534A2C03AC49003D4703 /* Base */; };
-		DD50534D2C03AC4C003D4703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD50534C2C03AC4C003D4703 /* Assets.xcassets */; };
 		DD5053502C03AC4C003D4703 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD50534F2C03AC4C003D4703 /* Base */; };
+		DD50535B2C03AD13003D4703 /* JSONArtist.json in Resources */ = {isa = PBXBuildFile; fileRef = DD50535A2C03AD13003D4703 /* JSONArtist.json */; };
+		DD50535D2C03C2BA003D4703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD50535C2C03C2BA003D4703 /* Assets.xcassets */; };
+		DD5053602C03C3B6003D4703 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50535F2C03C3B6003D4703 /* APIRequest.swift */; };
+		DD5053622C03C425003D4703 /* ArtistApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053612C03C425003D4703 /* ArtistApi.swift */; };
+		DD5053642C04E830003D4703 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053632C04E830003D4703 /* ArtistsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		DD5053432C03AC49003D4703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5053452C03AC49003D4703 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD5053472C03AC49003D4703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD50534A2C03AC49003D4703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD50534C2C03AC4C003D4703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD50534F2C03AC4C003D4703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5053512C03AC4C003D4703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD50535A2C03AD13003D4703 /* JSONArtist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JSONArtist.json; sourceTree = "<group>"; };
+		DD50535C2C03C2BA003D4703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD50535F2C03C3B6003D4703 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		DD5053612C03C425003D4703 /* ArtistApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistApi.swift; sourceTree = "<group>"; };
+		DD5053632C04E830003D4703 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		DD5053422C03AC49003D4703 /* InfoArtist */ = {
 			isa = PBXGroup;
 			children = (
-				DD5053432C03AC49003D4703 /* AppDelegate.swift */,
-				DD5053452C03AC49003D4703 /* SceneDelegate.swift */,
-				DD5053472C03AC49003D4703 /* ViewController.swift */,
-				DD5053492C03AC49003D4703 /* Main.storyboard */,
-				DD50534C2C03AC4C003D4703 /* Assets.xcassets */,
-				DD50534E2C03AC4C003D4703 /* LaunchScreen.storyboard */,
+				DD5053652C04FA16003D4703 /* MainVC */,
+				DD50535E2C03C3A2003D4703 /* APIRequest */,
+				DD5053572C03ACD6003D4703 /* Support */,
 				DD5053512C03AC4C003D4703 /* Info.plist */,
 			);
 			path = InfoArtist;
+			sourceTree = "<group>";
+		};
+		DD5053572C03ACD6003D4703 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DD5053432C03AC49003D4703 /* AppDelegate.swift */,
+				DD5053452C03AC49003D4703 /* SceneDelegate.swift */,
+				DD50535C2C03C2BA003D4703 /* Assets.xcassets */,
+				DD50534E2C03AC4C003D4703 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DD50535E2C03C3A2003D4703 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DD50535A2C03AD13003D4703 /* JSONArtist.json */,
+				DD50535F2C03C3B6003D4703 /* APIRequest.swift */,
+				DD5053612C03C425003D4703 /* ArtistApi.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		DD5053652C04FA16003D4703 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD5053472C03AC49003D4703 /* ViewController.swift */,
+				DD5053632C04E830003D4703 /* ArtistsView.swift */,
+			);
+			path = MainVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD50534D2C03AC4C003D4703 /* Assets.xcassets in Resources */,
+				DD50535B2C03AD13003D4703 /* JSONArtist.json in Resources */,
 				DD5053502C03AC4C003D4703 /* Base in Resources */,
-				DD50534B2C03AC49003D4703 /* Base in Resources */,
+				DD50535D2C03C2BA003D4703 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5053482C03AC49003D4703 /* ViewController.swift in Sources */,
+				DD5053622C03C425003D4703 /* ArtistApi.swift in Sources */,
 				DD5053442C03AC49003D4703 /* AppDelegate.swift in Sources */,
+				DD5053642C04E830003D4703 /* ArtistsView.swift in Sources */,
+				DD5053602C03C3B6003D4703 /* APIRequest.swift in Sources */,
 				DD5053462C03AC49003D4703 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD5053492C03AC49003D4703 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD50534A2C03AC49003D4703 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD50534E2C03AC4C003D4703 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +325,6 @@
 				INFOPLIST_FILE = InfoArtist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +352,6 @@
 				INFOPLIST_FILE = InfoArtist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
