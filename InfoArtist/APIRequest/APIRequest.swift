@@ -11,7 +11,8 @@ import Foundation
 class APIRequest {
     static let shared = APIRequest()
     
-    public var arrayArtins: [Artists] = []
+    var arrayArtins: [Artists] = []
+    var artistsWork: [Works] = []
     
     private init() {}
     
@@ -26,7 +27,7 @@ class APIRequest {
             let decoder = JSONDecoder()
             let json = try decoder.decode(ArtistApi.self, from: Data)
             arrayArtins = json.artists
-            print(arrayArtins)
+            artistsWork = json.artists.flatMap{$0.works}
             
             
         }catch{

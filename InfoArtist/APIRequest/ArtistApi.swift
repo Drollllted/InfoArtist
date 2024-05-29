@@ -9,6 +9,7 @@ import Foundation
 
 struct ArtistApi: Codable{
     let artists: [Artists]
+    
 }
 
 struct Artists: Codable{

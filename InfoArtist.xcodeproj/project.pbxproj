@@ -9,20 +9,26 @@
 /* Begin PBXBuildFile section */
 		DD5053442C03AC49003D4703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053432C03AC49003D4703 /* AppDelegate.swift */; };
 		DD5053462C03AC49003D4703 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053452C03AC49003D4703 /* SceneDelegate.swift */; };
-		DD5053482C03AC49003D4703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053472C03AC49003D4703 /* ViewController.swift */; };
+		DD5053482C03AC49003D4703 /* AristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053472C03AC49003D4703 /* AristViewController.swift */; };
 		DD5053502C03AC4C003D4703 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD50534F2C03AC4C003D4703 /* Base */; };
 		DD50535B2C03AD13003D4703 /* JSONArtist.json in Resources */ = {isa = PBXBuildFile; fileRef = DD50535A2C03AD13003D4703 /* JSONArtist.json */; };
 		DD50535D2C03C2BA003D4703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD50535C2C03C2BA003D4703 /* Assets.xcassets */; };
 		DD5053602C03C3B6003D4703 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50535F2C03C3B6003D4703 /* APIRequest.swift */; };
 		DD5053622C03C425003D4703 /* ArtistApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053612C03C425003D4703 /* ArtistApi.swift */; };
 		DD5053642C04E830003D4703 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053632C04E830003D4703 /* ArtistsView.swift */; };
+		DD50536C2C070AD9003D4703 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50536B2C070AD9003D4703 /* ArtistCell.swift */; };
+		DD50536F2C0767C7003D4703 /* WorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50536E2C0767C7003D4703 /* WorksViewController.swift */; };
+		DD5053712C0767F0003D4703 /* WorksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053702C0767F0003D4703 /* WorksView.swift */; };
+		DD5053742C077704003D4703 /* ArtistInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053732C077704003D4703 /* ArtistInfoViewController.swift */; };
+		DD5053762C077714003D4703 /* ArtistInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053752C077714003D4703 /* ArtistInfoView.swift */; };
+		DD5053782C0787F6003D4703 /* WorksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5053772C0787F6003D4703 /* WorksCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD5053402C03AC49003D4703 /* InfoArtist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoArtist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5053432C03AC49003D4703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5053452C03AC49003D4703 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD5053472C03AC49003D4703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD5053472C03AC49003D4703 /* AristViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AristViewController.swift; sourceTree = "<group>"; };
 		DD50534F2C03AC4C003D4703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5053512C03AC4C003D4703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD50535A2C03AD13003D4703 /* JSONArtist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JSONArtist.json; sourceTree = "<group>"; };
@@ -30,6 +36,12 @@
 		DD50535F2C03C3B6003D4703 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		DD5053612C03C425003D4703 /* ArtistApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistApi.swift; sourceTree = "<group>"; };
 		DD5053632C04E830003D4703 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
+		DD50536B2C070AD9003D4703 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		DD50536E2C0767C7003D4703 /* WorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksViewController.swift; sourceTree = "<group>"; };
+		DD5053702C0767F0003D4703 /* WorksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksView.swift; sourceTree = "<group>"; };
+		DD5053732C077704003D4703 /* ArtistInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoViewController.swift; sourceTree = "<group>"; };
+		DD5053752C077714003D4703 /* ArtistInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoView.swift; sourceTree = "<group>"; };
+		DD5053772C0787F6003D4703 /* WorksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +74,8 @@
 		DD5053422C03AC49003D4703 /* InfoArtist */ = {
 			isa = PBXGroup;
 			children = (
-				DD5053652C04FA16003D4703 /* MainVC */,
+				DD5053792C078962003D4703 /* ViewControllers */,
+				DD5053662C04FB30003D4703 /* ModelCell */,
 				DD50535E2C03C3A2003D4703 /* APIRequest */,
 				DD5053572C03ACD6003D4703 /* Support */,
 				DD5053512C03AC4C003D4703 /* Info.plist */,
@@ -94,10 +107,47 @@
 		DD5053652C04FA16003D4703 /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
-				DD5053472C03AC49003D4703 /* ViewController.swift */,
+				DD5053472C03AC49003D4703 /* AristViewController.swift */,
 				DD5053632C04E830003D4703 /* ArtistsView.swift */,
 			);
 			path = MainVC;
+			sourceTree = "<group>";
+		};
+		DD5053662C04FB30003D4703 /* ModelCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD50536B2C070AD9003D4703 /* ArtistCell.swift */,
+				DD5053772C0787F6003D4703 /* WorksCell.swift */,
+			);
+			path = ModelCell;
+			sourceTree = "<group>";
+		};
+		DD50536D2C0767B4003D4703 /* WorksVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD50536E2C0767C7003D4703 /* WorksViewController.swift */,
+				DD5053702C0767F0003D4703 /* WorksView.swift */,
+			);
+			path = WorksVC;
+			sourceTree = "<group>";
+		};
+		DD5053722C0776F1003D4703 /* ArtistInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD5053732C077704003D4703 /* ArtistInfoViewController.swift */,
+				DD5053752C077714003D4703 /* ArtistInfoView.swift */,
+			);
+			path = ArtistInfoVC;
+			sourceTree = "<group>";
+		};
+		DD5053792C078962003D4703 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5053652C04FA16003D4703 /* MainVC */,
+				DD50536D2C0767B4003D4703 /* WorksVC */,
+				DD5053722C0776F1003D4703 /* ArtistInfoVC */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,12 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5053482C03AC49003D4703 /* ViewController.swift in Sources */,
+				DD5053482C03AC49003D4703 /* AristViewController.swift in Sources */,
 				DD5053622C03C425003D4703 /* ArtistApi.swift in Sources */,
+				DD5053762C077714003D4703 /* ArtistInfoView.swift in Sources */,
+				DD50536F2C0767C7003D4703 /* WorksViewController.swift in Sources */,
+				DD5053782C0787F6003D4703 /* WorksCell.swift in Sources */,
+				DD5053712C0767F0003D4703 /* WorksView.swift in Sources */,
+				DD50536C2C070AD9003D4703 /* ArtistCell.swift in Sources */,
 				DD5053442C03AC49003D4703 /* AppDelegate.swift in Sources */,
 				DD5053642C04E830003D4703 /* ArtistsView.swift in Sources */,
 				DD5053602C03C3B6003D4703 /* APIRequest.swift in Sources */,
 				DD5053462C03AC49003D4703 /* SceneDelegate.swift in Sources */,
+				DD5053742C077704003D4703 /* ArtistInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
