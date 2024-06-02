@@ -51,7 +51,8 @@ extension AristViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let infoVC = ArtistInfoViewController()
-        let artists = artists.arrayArtins[indexPath.row]
+        let artistsIndex = indexPath.row
+        let artists = artists.arrayArtins[artistsIndex]
         
         infoVC.navigationItem.title = artists.name
         infoVC.artistInfo.artistInfoImage.image = UIImage(named: artists.image ?? "1")
@@ -60,6 +61,8 @@ extension AristViewController: UITableViewDelegate, UITableViewDataSource{
         
         self.navigationController?.pushViewController(infoVC, animated: true)
     }
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200

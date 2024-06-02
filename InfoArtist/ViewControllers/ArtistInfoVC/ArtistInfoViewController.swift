@@ -10,7 +10,7 @@ import UIKit
 class ArtistInfoViewController: UIViewController{
     
     var artistInfo: ArtistInfoView
-    var artistsWork = APIRequest.shared
+    var artistsWorkRequest = APIRequest.shared
     
     init() {
         self.artistInfo = ArtistInfoView()
@@ -34,22 +34,48 @@ class ArtistInfoViewController: UIViewController{
         artistInfo.worksArtistCollectionView.delegate = self
         artistInfo.worksArtistCollectionView.dataSource = self
         
-        print(artistsWork.artistsWork)
+        //let selectedArtist = artistsWorkRequest.arrayArtins[selectedArtistIndex]
+        
+       // print(artistsWorkRequest.artistsWork)
         
     }
 }
 
 extension ArtistInfoViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return artistsWork.artistsWork.count
+        return artistsWorkRequest.arrayArtins.flatMap{$0.works}.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WorksCell.identifire, for: indexPath) as? WorksCell else {fatalError("troubles in WorksColletionView")}
         
+//        if let cell = cell as? WorksCell {
+//            let work = artistsWorkRequest.artistsWork[indexPath.item]
+//            print(work)
+//        }
+        
+        let selectedArtist = artistsWorkRequest.arrayArtins[indexPath.item]
+        let works = selectedArtist.works
+        //cell.configure(with: works)
+        
+        
+//        let works = artistsWorkRequest.arrayArtins.flatMap({$0.works})
+//        let arraysWorks = works.first?.title
+//        print(arraysWorks)
         
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
     
+    
+}
+
+extension ArtistInfoViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 200)
+    }
 }

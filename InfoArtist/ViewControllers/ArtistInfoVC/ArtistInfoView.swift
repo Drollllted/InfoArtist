@@ -32,7 +32,7 @@ class ArtistInfoView: UIView {
     
     lazy var artistInfoImage: UIImageView = {
         let image = UIImageView()
-        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
         image.layer.cornerRadius = 15
         
